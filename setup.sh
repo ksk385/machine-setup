@@ -8,6 +8,7 @@ PACKAGE_LIST_FILE=./brew_packages.list
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/karankrishnani/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 cp .zshrc ~/.zshrc
 
