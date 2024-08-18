@@ -7,6 +7,8 @@ PACKAGE_LIST_FILE=./brew_packages.list
 # Install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/karankrishnani/.zprofile
+
 cp .zshrc ~/.zshrc
 
 source ~/.zshrc
